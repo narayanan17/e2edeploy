@@ -12,7 +12,7 @@ const configFile = config.require("docker-config-file");
 const name = config.require("app");
 
 
-const imageName = "name";
+const imageName = name;
 
 const gcrDockerProvider = new docker.Provider('gcr', {
     registryAuth: [{
